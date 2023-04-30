@@ -7,10 +7,11 @@
     transition-property: all;
     animation-name: myanimation1;
     transition-duration: 0.5s;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-delay: 0.3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite ; 
+    animation-direction: alternate;
 }
 @keyframes myanimation1 {
     0% {
@@ -21,7 +22,7 @@
     }
     50% {
         top: 180px;
-        left: 400px;
+        left: 570px;
         background-color: blue;
         border-radius: 0%;
         transform: rotate(-90deg);
@@ -42,10 +43,11 @@
     transition-property: all;
     animation-name: myanimation2;
     transition-duration: 0.5s;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-delay: 0.3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite ; 
+    animation-direction: alternate;
 }
 @keyframes myanimation2 {
     0% {
@@ -56,7 +58,7 @@
     }
     50% {
         bottom: 180px;
-        left: 400px;
+        left: 570px;
         background-color: blue;
         border-radius: 0%;
         transform: rotate(-90deg);
@@ -64,6 +66,74 @@
     100%{
         bottom: 177px;
         left: 0px;
+        background-color: green;
+    }
+}
+.third-animation{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    transition-property: all;
+    animation-name: myanimation3;
+    transition-duration: 0.5s;
+    animation-duration: 4s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ; 
+    animation-direction: alternate;
+}
+@keyframes myanimation3 {
+    0% {
+        bottom: 0px;
+        right: 0px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    50% {
+        bottom: 180px;
+        right: 570px;
+        background-color: blue;
+        border-radius: 0%;
+        transform: rotate(-90deg);
+    }
+    100%{
+        bottom: 177px;
+        right: 0px;
+        background-color: green;
+    }
+}
+.fourth-animation{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    transition-property: all;
+    animation-name: myanimation4;
+    transition-duration: 0.5s;
+    animation-duration: 4s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ; 
+    animation-direction: alternate;
+}
+@keyframes myanimation4 {
+    0% {
+        top: 0px;
+        right: 0px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    50% {
+        top: 180px;
+        right: 570px;
+        background-color: blue;
+        border-radius: 0%;
+        transform: rotate(-90deg);
+    }
+    100%{
+        top: 177px;
+        right: 0px;
         background-color: green;
     }
 }
