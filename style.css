@@ -1,3 +1,69 @@
-.first.animation{
-
+.first-animation{
+    width: 200px;
+    height: 200px;
+    left: 0;
+    background-color: red;
+    position: absolute;
+    transition-property: all;
+    animation-name: myanimation1;
+    transition-duration: 0.5s;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ; 
+}
+@keyframes myanimation1 {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    50% {
+        top: 180px;
+        left: 400px;
+        background-color: blue;
+        border-radius: 0%;
+        transform: rotate(-90deg);
+    }
+    100%{
+        top: 177px;
+        left: 0px;
+        background-color: green;
+    
+    }
+}
+.second-animation{
+    width: 200px;
+    height: 200px;
+    left: 0;
+    background-color: red;
+    position: absolute;
+    transition-property: all;
+    animation-name: myanimation2;
+    transition-duration: 0.5s;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ; 
+}
+@keyframes myanimation2 {
+    0% {
+        bottom: 0px;
+        left: 0px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    50% {
+        bottom: 180px;
+        left: 400px;
+        background-color: blue;
+        border-radius: 0%;
+        transform: rotate(-90deg);
+    }
+    100%{
+        bottom: 177px;
+        left: 0px;
+        background-color: green;
+    }
 }
